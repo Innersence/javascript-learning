@@ -1,0 +1,119 @@
+http://stackoverflow.com/search?q=spray+route+syntax
+http://stackoverflow.com/questions/27777668/how-do-directives-work-in-spray/27779588#27779588
+http://stackoverflow.com/questions/18395023/scala-parameters-pattern-spray-routing-example/27455927#27455927
+http://stackoverflow.com/questions/24581264/how-to-get-the-request-context-in-a-custom-directive/24606092#24606092
+spark
+http://itindex.net/detail/51871-spark-rdd-%E6%A8%A1%E5%9E%8B
+http://www.tuicool.com/articles/yuyIvqQ
+http://www.cnblogs.com/icyJ/p/sql_Over.html
+http://blog.csdn.net/cuipengfei1/article/details/40475201
+scala多线程问题
+https://twitter.github.io/scala_school/concurrency.html
+Queue的同步问题
+http://www.secdoctor.com/html/jbjs/33961.html
+
+Type Parameterization
+http://www.artima.com/pins1ed/type-parameterization.html#19.3
+type class
+http://www.scala-notes.org/2010/08/a-generic-interpolate-method-using-type-classes/
+http://danielwestheide.com/blog/2013/02/06/the-neophytes-guide-to-scala-part-12-type-classes.html
+scala cookbook
+http://alvinalexander.com/java/jwarehouse/akka-2.3/akka-actor/src/main/scala/akka/io/TcpConnection.scala.shtml
+
+Don't use Actors for concurrency
+https://www.chrisstucchio.com/blog/2013/actors_vs_futures.html
+
+https://cwiki.apache.org/confluence/display/Hive/LanguageManual+UDF#LanguageManualUDF-ConditionalFunctions
+
+hive函数文档
+http://www.zhihu.com/question/35339328
+定义容器类，常常不写G[A], 而写G[+A], 然后撞枪口上, contravariant position 逆变点（编译器对高阶类型参数类型变的检查点），函数参数是逆变点，但此处声明为+A（协变的）
+解决方法是：
+class G[+A]{def fun[B >: A](x: B){}}
+//或
+class G[-A]{def fun(x: A){}}
+不能编译过了，就完事了，究其原因大概是：
+《Effective Java》PECS 原则 (producser-extends, consumer-super)
+参考：java泛型的理解
+G[+A]类似一个生产者，提供数据。（大部分情况下称G为容器类型）
+G[-A] 是一个消费者，主要用来消费数据。（如上的 Equiv[-A] （其实就是个A => Boolean的函数，即Function1[-A, Boolean]））
+
+同理函数的参数为何声明为逆变，返回值为协变就好理解了
+同理
+class G[+A]{def fun[B >: A](x: B){}}
+就可理解为，我声明的是一个容器类型，但是它也有处理（消费数据）能力
+
+作者：夏梓耀
+链接：http://www.zhihu.com/question/35339328/answer/62632559
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+intillij 打包
+http://bglmmz.iteye.com/blog/2058785
+
+选择“Main Class”后，选择“copy to the output  and link via manifest”，配置“Directory for META-INF/MAINFEST.MF”，此项配置的缺省值是：D:\workshop\DbUtil\src\main\java，需要改成：D:\workshop\DbUtil\src\main\resources，如果不这样修改，打成的jar包里没有包含META-INF/MAINFEST.MF文件，这个应该是个IDEA的BU
+
+http://www.111cn.net/wy/js-ajax/58476.htm
+http://www.tuicool.com/articles/m63yIvm
+
+用em处理屏幕自适应
+http://clagnut.com/blog/348 
+95%的中国网站需要重写CSS
+http://jorux.com/archives/95-websites-of-china-need-to-rewrite-css/
+
+javascript函数式编程1,2,3
+http://ourjs.com/detail/57cf6b79696ab502edd8ea82?utm_source=tuicool&utm_medium=referral
+
+javascript密码花园
+http://bonsaiden.github.io/JavaScript-Garden/zh/
+
+javascript深入学习相关知识
+http://www.nowamagic.net/librarys/veda/detail/1630
+
+Function.prototype.call.apply结合用法分析示例
+http://www.bitscn.com/school/Javascript/201407/298763.html
+
+jquery滑动组件
+https://github.com/crnacura/dragdealer
+前端牛人https://github.com/crnacura
+其他https://github.com/crnacura/CodropsTemplate
+
+asynchronous-flow-control
+https://github.com/i5ting/asynchronous-flow-control
+
+响应式编程
+http://wiki.jikexueyuan.com/project/android-weekly/issue-145/introduction-to-RP.html
+
+函数式编程之monad理解
+http://www.jdon.com/idea/functor-monad.html
+
+npm设置代理
+npm config set proxy=http://proxy.zte.com.cn:80
+
+打开git bash
+export http_proxy="http://proxy.zte.com.cn:80" 
+export https_proxy="http://proxy.zte.com.cn:80"
+
+Angular2 注解及装饰器
+http://lib.csdn.net/article/angularjs/12729
+https://github.com/wycats/javascript-decorators
+http://blog.thoughtram.io/angular/2015/05/03/the-difference-between-annotations-and-decorators.html
+
+Angular 2中的Zone
+http://lib.csdn.net/article/angularjs/12724
+http://blog.thoughtram.io//angular/2016/02/01/Zone-in-angular-2.html
+
+ Angular 2模板语法以及其他文章
+http://blog.csdn.net/junjun16818/article/details/51278732
+
+
+安卓开源项目
+http://blog.csdn.net/qq_27397109/article/details/52740882
+
+
+依赖倒置原则 http://www.cnblogs.com/cbf4life/archive/2009/12/15/1624435.html
+高层模块不应该依赖低层模块，两者都应该依赖其抽象；
+抽象不应该依赖细节；
+细节应该依赖抽象。
+
+OIRUH16116030966
