@@ -8,4 +8,4 @@ The target is to note the knowledge.
 《javascript 权威指南》--page212
 </br>
 
-![Foo.prototype.method.call](https://segmentfault.com/q/1010000005778821)
+[Foo.prototype.method.call](https://segmentfault.com/q/1010000005778821)
