@@ -45,3 +45,34 @@ is('String', 'test'); // true
 is('String', new String('test')); // true
 
 ```
+
+[秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
+
+####字符串转数字
++'10' === 10; // true
+使用一元的加号操作符，可以把字符串转换为数字
+
+字符串转换为数字的常用方法：
+```javascript
++'010' === 10
+Number('010') === 10
+parseInt('010', 10) === 10  // 用来转换为整数
+
++'010.2' === 10.2
+Number('010.2') === 10.2
+parseInt('010.2', 10) === 10
+```
+
+[秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
+
+####转换为布尔型
+```javascript
+!!'foo';   // true
+!!'';      // false
+!!'0';     // true
+!!'1';     // true
+!!'-1'     // true
+!!{};      // true
+!!true;    // true
+```
+[秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
