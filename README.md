@@ -109,3 +109,19 @@ foo; // 3
 [秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
 
 在任何情况下我们都应该避免使用 eval 函数。99.9% 使用 eval 的场景都有不使用 eval 的解决方案。
+
+####setTimeout 和 setInterval作用域
+
+作为第一个参数的函数将会在全局作用域中执行，因此函数内的 this 将会指向这个全局对象。
+```javascript
+function Foo() {
+    this.value = 42;
+    this.method = function() {
+        // this 指向全局对象
+        console.log(this.value); // 输出：undefined
+    };
+    setTimeout(this.method, 500);
+}
+
+new Foo();
+```
