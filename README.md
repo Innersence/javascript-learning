@@ -129,3 +129,12 @@ new Foo();
 setTimeout 只会执行回调函数一次，不过 setInterval - 正如名字建议的 - 会每隔 X 毫秒执行函数一次。 但是却不鼓励使用这个函数。
 
 当回调函数的执行被阻塞时，setInterval 仍然会发布更多的回调指令。在很小的定时间隔情况下，这会导致回调函数被堆积起来。
+#####解决阻塞的方式
+最简单也是最容易控制的方案，是在回调函数内部使用 setTimeout 函数。
+```javascript
+function foo(){
+    // 阻塞执行 1 秒
+    setTimeout(foo, 100);
+}
+foo();
+```
