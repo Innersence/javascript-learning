@@ -76,3 +76,34 @@ parseInt('010.2', 10) === 10
 !!true;    // true
 ```
 [秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
+
+
+####为什么不要使用 eval
+
+eval 函数会在当前作用域中执行一段 JavaScript 代码字符串
+
+```javascript
+var foo = 1;
+function test() {
+    var foo = 2;
+    eval('foo = 3');
+    return foo;
+}
+test(); // 3
+foo; // 1
+```
+但是 eval 只在被直接调用并且调用函数就是 eval 本身时，才在当前作用域中执行。
+
+```javascript
+var foo = 1;
+function test() {
+    var foo = 2;
+    var bar = eval;
+    bar('foo = 3');
+    return foo;
+}
+test(); // 2
+foo; // 3
+```
+上面的代码等价于在全局作用域中调用 eval.
+[秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
