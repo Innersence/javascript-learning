@@ -31,3 +31,17 @@ Foo1.method = function() {
 
 Foo1.method("a","b","c");//输出结果b,c
 ```
+####获取对象类型的方法
+
+通常typeof和instanceof都是不可靠的，但是可以通过以下方式获取。
+JavaScript 标准文档只给出了一种获取 [[Class]] 值的方法，那就是使用 Object.prototype.toString。
+```javascript
+function is(type, obj) {
+    var clas = Object.prototype.toString.call(obj).slice(8, -1);
+    return obj !== undefined && obj !== null && clas === type;
+}
+
+is('String', 'test'); // true
+is('String', new String('test')); // true
+
+```
