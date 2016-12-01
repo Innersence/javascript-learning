@@ -107,3 +107,5 @@ foo; // 3
 ```
 上面的代码等价于在全局作用域中调用 eval.
 [秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/)
+
+在任何情况下我们都应该避免使用 eval 函数。99.9% 使用 eval 的场景都有不使用 eval 的解决方案。
