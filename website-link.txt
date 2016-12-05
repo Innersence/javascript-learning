@@ -116,4 +116,6 @@ http://blog.csdn.net/qq_27397109/article/details/52740882
 抽象不应该依赖细节；
 细节应该依赖抽象。
 
-OIRUH16116030966
+vertx
+Vert.x里面那些b格很高的玩意
+https://zhuanlan.zhihu.com/p/20757892?refer=sixiangweicao
