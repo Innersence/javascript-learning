@@ -110,6 +110,9 @@ http://blog.csdn.net/junjun16818/article/details/51278732
 安卓开源项目
 http://blog.csdn.net/qq_27397109/article/details/52740882
 
+仿淘宝页面
+http://www.tuicool.com/articles/InEjIrr
+
 
 依赖倒置原则 http://www.cnblogs.com/cbf4life/archive/2009/12/15/1624435.html
 高层模块不应该依赖低层模块，两者都应该依赖其抽象；
