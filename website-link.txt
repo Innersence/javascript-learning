@@ -120,6 +120,7 @@ http://www.tuicool.com/articles/InEjIrr
 细节应该依赖抽象。
 
 vertx
+https://github.com/vert-x3/vertx-awesome
 Vert.x里面那些b格很高的玩意
 https://zhuanlan.zhihu.com/p/20757892?refer=sixiangweicao
 
