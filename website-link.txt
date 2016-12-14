@@ -123,8 +123,10 @@ vertx
 https://github.com/vert-x3/vertx-awesome
 Vert.x里面那些b格很高的玩意
 https://zhuanlan.zhihu.com/p/20757892?refer=sixiangweicao
-
+使用示例，包括如何直接用vertx发布包运行js http://www.jdon.com/concurrent/vertx.html
 im projects
 https://github.com/frankfancode/AndroidIM
 https://github.com/kymjs/EmojiChat
 https://github.com/ijarobot/Android-Chat-Widget
+
+
