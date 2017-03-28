@@ -129,4 +129,15 @@ https://github.com/frankfancode/AndroidIM
 https://github.com/kymjs/EmojiChat
 https://github.com/ijarobot/Android-Chat-Widget
 
+rxjvava
+http://gank.io/post/560e15be2dca930e00da1083
+
+idea注册
+http://idea.lanyus.com/
+
+RxJava 与 Retrofit 结合的最佳实践
+http://gank.io/post/56e80c2c677659311bed9841
+
+给 JavaScript 初心者的 ES2015 实战
+http://gank.io/post/564151c1f1df1210001c9161
 
